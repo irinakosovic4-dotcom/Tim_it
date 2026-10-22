@@ -1,0 +1,6 @@
+.team-card[data-team="product"] { --accent: var(--product); }
+.team-card[data-team="management"] { --accent: var(--management); }
+.team-card[data-team="design"] { --accent: var(--design); }
+.team-card[data-team="development"] { --accent: var(--development); }
+.team-card[data-team="quality"] { --accent: var(--quality); }
+

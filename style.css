@@ -1,0 +1,70 @@
+:root {
+  --product: #2563eb;
+  --management: #7c3aed;
+  --design: #db2777;
+  --development: #0f766e;
+  --quality: #ea580c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+svg {
+    display: block;
+}
+
+.team {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+
+.team__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.team-card[data-team="product"] { --accent: var(--product); }
+.team-card[data-team="management"] { --accent: var(--management); }
+.team-card[data-team="design"] { --accent: var(--design); }
+.team-card[data-team="development"] { --accent: var(--development); }
+.team-card[data-team="quality"] { --accent: var(--quality); }
+
+.team__card {
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 2px solid violet;
+    border-radius: 40px;
+    background: #ffffff;
+    border: 1px solid #e4e7ec;
+    border-top: 5px solid var(--management);
+    transition: 0.2s;
+}
+
+.team__card:hover {
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+
+.team__card-prof {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
